@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Caribbean Old Fashioned",
+        "description": "Our take on the classic old fashioned, made with carribbean rum and walnut bitters",
+        "tags": ["old fashioned", "citrus", "rum"],
+        "ingredients": ["Rhum Barbancourt", "Walnut Bitters", "Orange Peel"],
+        "image": "/static/img/old-fashioned.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Honeybelle",
+        "description": "Our signature cocktail, with passion fruit and pineapple flavors",
+        "tags": ["citrus", "refreshing", "light","martini"],
+        "ingredients":["Passion Fruit Juice", "Pineapple Juice", "Goslings Gold Rum"],
+        "image": "/static/img/honeybelle.jpg"
+
+    },
+
+    {
+        "id": 3,
+        "name": "Southbound",
+        "description": "A smoky and refreshing Mezcal Margarita with fresh lime juice and agave",
+        "tags":["citrus", "smoky", "acidic", "margarita"],
+        "ingredients": ["Mezcal", "Lime Juice", "Agave"],
+        "image": "/static/img/margarita.jpg"
+
+    }
+]

@@ -1,0 +1,65 @@
+import { useLocation, Link } from 'react-router-dom'
+import { List, ListItem, Container, Button } from '@mui/material'
+import { Col, Row } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
+import { GiKnifeFork } from 'react-icons/gi'
+
+
+const DisplayDrink = () => {
+  const {user} = useSelector((state) => state.auth)
+  const location = useLocation()
+  const { drink } = location.state
+
+
+  console.log(drink)
+  console.log(user);
+
+
+  return (
+    <div>
+      <Container>
+        <h2 className="mb-3">{drink.name}</h2>
+        <hr/>
+        { drink.image ?
+        <img className="mb-3" src={process.env.PUBLIC_URL + drink.image} alt={drink.name} height="40%" width="70%" />
+        : <GiKnifeFork size={ 150} />
+        }
+        <hr />
+        <h4>Description</h4>
+        <p>{drink.description}</p>
+        <hr/>
+        <Row>
+          <Col>
+            <h4 className='underline'>Ingredients</h4>
+            <List dense={true}>
+              
+            { 
+              drink.ingredients.map( (ingredient) =>  (
+                <ListItem key={ingredient} id="ingredient-list">{ingredient}</ListItem>
+              )) 
+            }
+            </List>
+          </Col>
+          <Col>
+            <h4 className='underline'>Pairs With</h4>
+            <List dense={true}>
+            {
+              drink.tags.map((tag) => (
+                <ListItem key={tag} id="ingredient-list">{tag}</ListItem>
+              ))
+            }
+            </List>
+          </Col>
+        </Row>
+        <hr/>
+        <Button variant="contained" color='warning' href="/drinks">Back</Button>
+        <Button variant='contained' color='info' href={`/drinks/${drink._id}/edit`}>Edit</Button>
+        <Link to={`/drinks/${drink._id}/confirm-delete`} state={{drink}}><Button variant="contained" color='error'>Delete</Button></Link>
+        <hr/>
+      </Container>
+    </div>
+         
+  )
+}
+
+export default DisplayDrink

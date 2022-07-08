@@ -1,0 +1,34 @@
+
+[
+    {
+        "id": 1,
+        "name": "Chicken Ceaser Salad",
+        "description": "Romaine Lettuce with our house-made ceaser dressing served with croutons and anchovies",
+        "tags" : ["Pinot Noir", "Margarita", "Chardonnay"],
+        "ingredients": ["Grilled Chicken","Romaine Lettuce","Ceasear Dressing", "Croutons"],
+        "image": "/static/img/cesar-salad.jpg",
+        "allergens":["gluten","dairy","poultry"]
+        
+
+    },
+
+    {
+        "id": 2,
+        "name": "Fish and Chips",
+        "description": "Red Snapper crusted with cornmeal and served with cole slaw and french fries",
+        "tags": ["Sav Blanc", "Rum", "Margarita"],
+        "ingredients":["Red Snapper","French Fries","Cole Slaw"],
+        "allergens":["seafood","dairy"]
+    },
+
+    {
+        "id": 3,
+        "name": "Smash Burger",
+        "description": "Two 4oz Patties with white cheddar cheese on potato roll served with french fries",
+        "tags": ["Cabernet", "Beer", "Prosecco"],
+        "ingredients": ["Angus Beef","Potato Roll","LTOP","French Fries", "Garlic Aioli"],
+        "allergens":["gluten","beef"]
+    }
+
+
+]
