@@ -21,7 +21,8 @@ function FoodTable(dishes) {
                         <TableCell></TableCell>
                         <TableCell align="left">Name</TableCell>
                         <TableCell align="center">Description</TableCell>
-                        <TableCell align="left">Add To Quiz</TableCell>
+                        <TableCell colSpan={2} align="left">Add To Quiz</TableCell>
+                        <TableCell />
                         </TableRow>
                     </TableHead>
                     <TableBody>

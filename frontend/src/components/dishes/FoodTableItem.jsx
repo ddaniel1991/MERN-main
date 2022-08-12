@@ -64,11 +64,11 @@ function FoodTableItem(props) {
                   </Box>
                 </Collapse>
               </TableCell>
-              <TableCell style={{ paddingBOttom: 0, paddingTop: 0}}>
+              <TableCell colSpan={4} style={{ paddingBOttom: 0, paddingTop: 0}}>
                 <Collapse in={open} timeout="auto" unmountOnExit>
                   <Box sx={{margin:1}}> 
                     <div>
-                      <h4 className='underline'>Pairs With:</h4>
+                      <h5 className='underline'>Pairs With:</h5>
                     </div>
                     <List dense={true}>
                     {dish.tags.map((tag) => (
